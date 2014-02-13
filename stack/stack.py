@@ -1,11 +1,13 @@
+__author__ = "jay"
+
 # Stack implementation with last index as TOP
 # Performance is good. O(1)
 class Stack:
     """
     A Stack ADT implementation using list with last index as TOP
     """
-    def __init__(self):
-        self.items = []
+    def __init__(self, *args):
+        self.items = list(args)
 
     def isEmpty(self):
         return self.items == []
@@ -28,8 +30,8 @@ class Stack:
     """
     A Stack ADT implementation using list with first index as TOP
     """
-#    def __init__(self):
-#        self.items = []
+#    def __init__(self, *args):
+#        self.items = list(args)
 #    
 #    def isEmpty(self):
 #        return self.items == []

@@ -1,3 +1,5 @@
+__author__ = "jay"
+
 from stack import Stack
 
 def reverse_string(string):
