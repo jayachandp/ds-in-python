@@ -13,7 +13,7 @@ class Queue():
     def dequeue(self):
         return self.items.pop()
 
-    def isEmpty(self):
+    def is_empty(self):
        return self.items == [] 
 
     def size(self):
@@ -39,7 +39,7 @@ class QueueR():
     def dequeue(self):
        self.items.pop(0)
    
-    def isEmpty(self):
+    def is_empty(self):
        return self.items == []
    
     def size(self):

@@ -9,9 +9,6 @@ class Stack:
     def __init__(self, *args):
         self.items = list(args)
 
-    def isEmpty(self):
-        return self.items == []
-
     def push(self, item):
         self.items.append(item)
 
@@ -19,7 +16,10 @@ class Stack:
         return self.items.pop()
     
     def peek(self):
-        return self.items[len(self.items)-1]
+        return self.items[-1]
+    
+    def is_empty(self):
+        return self.items == []
 
     def size(self):
         return len(self.items)
@@ -33,8 +33,6 @@ class Stack:
 #    def __init__(self, *args):
 #        self.items = list(args)
 #    
-#    def isEmpty(self):
-#        return self.items == []
 #
 #    def push(self, item):
 #        self.items.insert(0,item)
@@ -44,6 +42,9 @@ class Stack:
 #
 #    def peek(self):
 #        return self.items[0]
-#    
+#
+#    def is_empty(self):
+#        return self.items == []
+#
 #    def size(self):
 #        return len(self.items)
